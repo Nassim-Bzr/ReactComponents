@@ -1,42 +1,93 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.container {
+  width: 50%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-home {
+  width: auto;
+  margin: 8px;
+  border-radius: 16px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div-home {
+  background-color: bisque;
+}
+
+.Title-omelette {
+  margin: 1em;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.text-omelette {
+  margin: 2em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-nutrition {
+  margin: 1em;
+}
+.title-nutrition {
+  color: rgb(85, 46, 4);
+  margin: 2em;
+}
+.div-preparation {
+  background-color: rgba(255, 192, 203, 0.707);
+  margin: 1em;
+  padding: 1em;
+  border-radius: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.title-preparation {
+  color: rgb(148, 23, 148);
+  margin: 2em;
 }
 
-.card {
-  padding: 2em;
+.title-ingredients {
+  color: rgb(85, 46, 4);
+  margin: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+.li-ingredients {
+  margin: 1em;
+}
+
+.title-instructions {
+  color: rgb(85, 46, 4);
+  margin: 2em;
+}
+.number-calories {
+  margin: 1em;
+  color: rgb(85, 46, 4);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.table-nutrition {
+  width: 50%;
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tr-table {
+  display: flex;
+  margin: 1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tr-calories {
+  display: flex;
+  margin: 1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
