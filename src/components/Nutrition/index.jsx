@@ -10,26 +10,16 @@ function Nutrition() {
         <div className="div-nutrition">
             <h2 className="title-nutrition">Nutrition</h2>
             <p className="text-nutrition">
-                The table below shows nutrional values per serving without the additional fillings
+                The table below shows nutritional values per serving without the additional fillings
             </p>
-            <table className=" table-nutrition">
-                <tr className="tr-table">
-                    {data.map((item, index) => (
-                        <th key={index} className="text-th">
-                            {item.label}
-                        </th>
-                    ))}
-                </tr>
-                <tr className="tr-calories">
-                    {data.map((item, index) => (
-                        <td key={index} className="number-calories">
-                            {item.value}
-                        </td>
-                    ))}
-                </tr>
-            </table>
+            <div className="nutrition-values">
+                {data.map((item, index) => (
+                    <p key={index} className="nutrition-value">
+                        {item.label}: {item.value}
+                    </p>
+                ))}
+            </div>
         </div>
     );
 }
 export default Nutrition;
-
